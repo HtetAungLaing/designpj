@@ -64,6 +64,23 @@
     border-radius: 2rem;
 }
 .blur{
-    background-color: #9c9c9c3b !important;
-    backdrop-filter: blur(10px);
+    background-color: #5858583b !important;
+    backdrop-filter: blur(7px);
+}
+.card-img-top{
+    transition: transform 0.5s
+}
+.shop-card{
+    border-radius: 45px;
+}
+.shop-card:hover .card-body{
+    background:#f7c775;   
+    transition: background 0.5s
+}
+.shop-card:hover .card-img-top{
+   transform: scale(1.1);
+}
+[class^='imghvr-'],
+[class*=' imghvr-'] {
+  background-color: #fff !important;
 }
