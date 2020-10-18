@@ -69,6 +69,53 @@ $(window).scroll(() => {
     if (scroll == 0) {
         $('.pro').css('width', '0');
     }
-    console.log(scroll);
+    // console.log(scroll);
 })
+$('#home').waypoint(function (direction) {
+    $('.nav-item a').removeClass('indi');
+    $('.nav-item a[href="#home"]').addClass('indi');
+}, {
+    offset: '-10%'
+})
+$('#services').waypoint(function (direction) {
+    $('.nav-item a').removeClass('indi');
+    $('.nav-item a[href="#services"]').addClass('indi');
+}, {
+    offset: '0%'
+})
+$('#products').waypoint(function (direction) {
+    $('.nav-item a').removeClass('indi');
+    $('.nav-item a[href="#products"]').addClass('indi');
+}, {
+    offset: '0%'
+})
+$('#project').waypoint(function (direction) {
+    $('.nav-item a').removeClass('indi');
+    $('.nav-item a[href="#project"]').addClass('indi');
+}, {
+    offset: '0%'
+})
+$('#blog').waypoint(function (direction) {
+    $('.nav-item a').removeClass('indi');
+    $('.nav-item a[href="#blog"]').addClass('indi');
+}, {
+    offset: '0%'
+})
+$('#contact').waypoint(function (direction) {
+    $('.nav-item a').removeClass('indi');
+    $('.nav-item a[href="#contact"]').addClass('indi');
+}, {
+    offset: '80%'
+})
+wow = new WOW(
+    {
+        boxClass: 'wow',      // default
+        animateClass: 'animate__animated', // default
+        offset: 0,          // default
+        mobile: true,       // default
+        live: true        // default
+    }
+)
+wow.init();
+
 

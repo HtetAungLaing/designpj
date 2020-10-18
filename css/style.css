@@ -21,6 +21,10 @@ body{
     width: 100%;
     z-index: 100; 
 }
+.home{
+    position: relative;
+    margin-top: 5% !important;
+}
 .carousel-indicators .active{
     background-color: black;
 }
@@ -51,7 +55,7 @@ body{
     top: 10%;
     right: 30px;    
     transform: rotate(90deg) translateY(-50%);
-    background: #000000;
+    background: #00000073;
     backdrop-filter: blur(10px);
 }
 #mycarousel .carousel-control-next{
@@ -63,7 +67,7 @@ body{
     top: auto;
     right: 30px;    
     transform: rotate(90deg) translateY(-50%);
-    background:#000000;
+    background:#00000073;
     backdrop-filter: blur(10px);
 }
 #mycarousel img{
@@ -143,9 +147,11 @@ body{
 .footer-block{
     border-left: 5px solid #000000;
 }
+.sofa{
+    transition: all 0.5s;
+}
 .sofa:hover{
     transform: scale(1.03);
-    transition: all 0.5s;
 }
 .line{
     width: 25%;
@@ -169,6 +175,53 @@ body{
     height: 5px;
     background:#e2ad4c;
 }
+.indi{
+    border-bottom: 2.5px solid #6a767a;
+}
+.mouse{
+    width: 40px;
+    height: 40px;
+    background-color: #e5b75f;
+    border-radius: 50%;
+    cursor: pointer;
+    bottom: -5%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+.mouse img{
+    width: 40%;
+    animation: mouse linear 0.3s infinite;
+}
+.up{
+    width: 40px;
+    height: 40px;
+    background: #e2ad4c;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    z-index: 999;
+}
+.ani1{
+    animation-delay: 0.6s;
+}
+.ani2{
+    animation-delay: 1s;
+}
+.ani3{
+    animation-delay: 1.5s;
+}
+.ani4{
+    animation-delay: 2s;
+}
+@keyframes mouse{
+    from {margin-bottom: 6px;}
+    to {margin-bottom: 0px;}
+}
 @keyframes ani1{
     from {top: 0;}
     to {top: -70px;}
@@ -177,7 +230,11 @@ body{
     from {top: -70px;}
     to {top: 0;}
 }
+
 @media screen and (max-width: 450px){
+    .navi{
+        backdrop-filter: blur(20px);
+    }
     .navbar-toggler{
         border: none !important;
     }
@@ -218,5 +275,11 @@ body{
     }
     .line{
         width: 60% !important;
+    }
+    .mouse{
+        bottom: 13%;
+    }
+    .home{
+        margin-top: 20% !important;
     }
 }
